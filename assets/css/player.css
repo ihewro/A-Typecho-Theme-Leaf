@@ -191,6 +191,7 @@ li.lib {
 #pContent .ssBtn {
     width: 70px;
     height: 70px;
+    margin-top: -5px;
 	color: #FFF;
     font-size: 28px;
     line-height: 40px;
