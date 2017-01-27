@@ -1016,10 +1016,6 @@ a.social:hover {
     height: 100%;
 }
 
-#me-words p {
-    text-align: center;
-	font-family:"Microsoft YaHei", Arial, Verdana, sans-serif;
-}
 
 /* =======================
  * archive.php
@@ -1036,6 +1032,8 @@ a.social:hover {
 }
 
 #search-text{
+    padding-left: 8px;
+    padding-right: 8px;
 	background: rgba(0, 0, 0, 0.22);
     border: none;
     height: 40px;
