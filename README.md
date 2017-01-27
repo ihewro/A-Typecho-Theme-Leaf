@@ -1,17 +1,7 @@
-# Leaf 2.8(2016/11/17更新)
+# Leaf-Mod-lite 0.1-base2.8( 2017/01/27 更新 )
 
-![Responsive Screen Mockup Pack.png](http://www.ihewro.com/usr/uploads/2016/10/739013502.png)
+![Responsive Screen Mockup Pack.png](http://mooow.pw/usr/themes/Leaf/screenshot.png)
 
-## 说明
-
-任何建议或者功能添加，都可以提出issue或者pull request 给我\(^o^)/~
-
-## 主题介绍
-
-farbox的有一句介绍我很喜欢：在复杂中保持简洁。
-我们写作，我们生活，我们不断记录希望在时间留下流逝的痕迹，记录我们每一步的成长。
-Leaf应用而生，leaf专注于记录与阅读，没有太多的功能，没有太喧嚣的界面。适合书写大段的文字。对于诗词的排版也十分友好。我希望保持初心，一直记录现在的自己。
-——this is Leaf.
 
 ## 主题特色
 * 全站部署了pjax刷新，更轻巧，更快速
@@ -29,7 +19,6 @@ Leaf应用而生，leaf专注于记录与阅读，没有太多的功能，没有
 
 
 ## 使用说明
-
 * 必须新建两个独立页面：
  * about-me :就是首页目录的“about”入口，记得把地址设置成`/about.html`哦
  * achieve-time :就是首页目录“achieve”入口，记得把地址设置成`/archive.html`哦
@@ -39,24 +28,10 @@ Leaf应用而生，leaf专注于记录与阅读，没有太多的功能，没有
 * **不支持原生评论！**，你把pjax的代码去掉就支持了，原生评论的代码已经内置了，pjax与原生评论有冲突，暂时不知道怎么改。
 * 本主题index.php并没有像普通主题输出文章，而是仅仅使用了归档页面，所以归档页面无法分页，后续会对此部分进行调整更新。（也不会有太大问题，因为归档页面也很简洁，加载不会太慢）
 
-##与主题完全兼容的插件
+## 与主题完全兼容的插件
 * [AutoTags](https://dt27.org/php/autotags-for-typecho/)
 * [BaiduSubmit](https://blog.phpgao.com/typecho_plugin_baidusubmit.html)
 * [Duoshuo](http://www.ysido.com/duoshuo.html)
-* [EditorMD](https://dt27.org/php/editormd-for-typecho/)
+~~* [EditorMD](https://dt27.org/php/editormd-for-typecho/)~~
 * [PlayAtWill](https://typecodes.com/web/typechomp3player.html)
 * [ShowGithubRepo](http://techair.cc/88.html)
-
-
----
-
-一款免费的用心主题，
-如果你喜欢，不妨给一个`star`给我一点鼓励吧。
-如果你愿意，不妨支持一元钱。
-支付宝：
-<span id="alipay"><img src="http://www.ihewro.com/usr/uploads/2016/09/124027949.jpg" width="200px" height="200px" /></span>
-
-
----
-
-欢迎fork，欢迎提出建议和bug。
