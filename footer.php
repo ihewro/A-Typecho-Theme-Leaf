@@ -1,4 +1,7 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+
+
+
 <style>
 #friend-head,.footer-info{
 	display:inline;
@@ -7,8 +10,9 @@ p#friend-head{
     cursor: pointer;
 	color: #7ebb8a;
 }
-
 </style>
+
+
 
 <!--  #footer -->
 <div class="footer">
@@ -22,12 +26,14 @@ p#friend-head{
 			&copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>" class="link"><?php $this->options->title(); ?></a>
             
 		</div>
-        <p id="friend-head">朋友们</p>
+        <br />
+        <p id="friend-head">- L i n k s -</p>
         <div id="friends">
 		<?php $this->options->links(); ?>
         </div>
 </div>
 </div>
+
 
 
 <script>
@@ -47,26 +53,6 @@ $("#friend-head").bind("click",function(){
 
 </script>
 
-<script>
 
-
-$(".footer-pic").click(function(){	
-	win_tips({title:'这是第2个彩蛋',text:'告诉你一个秘密：我18岁，男生，想成为一个善良的人！喜欢可爱的东西',duration:4000,icon:'fa fa-heart'});
-})
-
-$(".archive-year").click(function(){	
-	win_tips({title:'这是第3个彩蛋',text:'很有耐心哦，诺，给你我的一张照片：http://t.cn/RVZQ3Ga',duration:4000,icon:'fa fa-file-image-o'});
-})
-
-$("#egg4").click(function(){	
-	win_tips({title:'这是第4个彩蛋',text:'偷偷告诉你，我时常孤独，时常想起一个人，忧伤',duration:4000,icon:'fa fa-file-image-o'});
-})
-
-
-$("#me-words").click(function(){	
-	win_tips({title:'这是最后一个彩蛋',text:'5个彩蛋你都找到啦！爱你（づ￣3￣）づ╭❤～',duration:4000,icon:'fa fa-qq'});
-})
-
-</script>
     
 <?php $this->footer(); ?>

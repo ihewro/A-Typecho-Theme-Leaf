@@ -2,135 +2,61 @@
 /**
  * 就如一片叶子般轻松自如吧
  * 
- * @package Leaf
- * @author ihewro
- * @version 2.8
- * @link http://www.ihewro.com
+ * @package Leaf-Mod-lite
+ * @author 私語 / ihewro
+ * @version 0.1-base2.8
+ * @link https://coding.net/u/o0Hugo/p/Leaf-re
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  $this->need('header.php');
  ?>
  
- <div id="pjax-container">
- <style>
+ 
+ 
+<div id="pjax-container">
+     
+     
+     
+<style>
 	 #search {
-	 display: none;
-	 }
-	 .content2 {
-	text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
-    letter-spacing: 1px;
-    -webkit-font-smoothing: subpixel-antialiased;
-    text-align: center;
-    color: #fff;
-}
-.p_part p {
-    margin: 0;
-}
-</style>
-<?php if ( $this->options->Styleswitch =='1' ) : ?>
- <style>
- #nav-menu i,#nav-menu:after,#nav-menu:before {
- 	background-color: #fff;
- }
- .buttons {
-    margin-top: 115px;
-    margin-bottom: 0px;
-    text-align: center;
-    -webkit-font-smoothing: antialiased;
-}
-.buttons a {
-    letter-spacing: 1px;
-    font-family: Arial;
-    font-size: 18px;
-    text-decoration: none;
-    color: #fff;
-    padding: 15px 30px;
-    background: #fff;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 3px;
-    margin: 0 18px;
-    line-height: 60px;
-}
-.buttons a:hover {
-    background: #f3f3f3;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-@media only screen and (max-width: 680px){
-.buttons a {
-    font-size: 14px;
-    padding: 10px 20px;
-    margin: 0 12px;
-    line-height: 48px;
-}
-}
-.index-container {
-    position: absolute;
-    top: 45%;
-    width: 100%;
-    min-width: 300px;
-    height: auto;
-    min-height: 200px;
-    background: none;
-    z-index: 80;
-    transform: translateY(-50%);
+	display: none;
 }
 
-.index-title {
-    margin: 0;
-    padding: 0px 0 0px 0;
-    margin-bottom: 20px;
-    line-height: 1.1;
-    height: auto;
-    text-align: center;
-    text-transform: none;
-    letter-spacing: 0px;
-    font-family: "Microsoft YaHei", Arial, Verdana, sans-serif;
-    font-size: 42px;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
-}
 .content2 {
 	text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
-    letter-spacing: 1px;
-    -webkit-font-smoothing: subpixel-antialiased;
-    text-align: center;
-    color: #fff;
+	letter-spacing: 1px;
+	-webkit-font-smoothing: subpixel-antialiased;
+	text-align: center;
+	color: #fff;
 }
+
 .p_part p {
-    margin: 0;
+	margin: 0;
 }
-.index-contacts {
-    padding: 0px;
-    height: auto;
-    text-align: center;
-}
-.p_part {
-    width: 60%;
-    margin: 0 auto;
-}
- </style>
-<?php endif; ?>
+
 
 <?php if (!empty($this->options->indexsetup) && in_array('IndexImage', $this->options->indexsetup)) : ?>
 <?php else : ?>
-<style>
+
 #cover {
-    position: relative;
-    max-width: 100%;
-    height: 100%;
-    background-attachment: fixed;
-    background-size: cover;
+	position: relative;
+	max-width: 100%;
+	height: 100%;
+	background-attachment: fixed;
+	background-size: cover;
 	background-position: center center;
 }
-</style>
+
 <?php endif ;?>
-<style>
+
  #nav-menu i,#nav-menu:after,#nav-menu:before {
- 	background-color: #fff;
- }
+	background-color: #fff;
+}
 </style>
+
+
+
 <script>
 <?php if (!empty($this->options->indexsetup) && in_array('IndexImage', $this->options->indexsetup)): ?>
 //首页大图动画效果
@@ -223,99 +149,93 @@ $("#search-Button").bind("click",function(event){
 	
 });
 });
-
-/*首页彩蛋
-$(".index-title").click(function(){	
-	win_tips({title:'这是第1个彩蛋',text:'你开启了一扇秘密的门！一共5个彩蛋藏在整个网站里面┗|｀O′|┛ 嗷~~',duration:4000,icon:'fa fa-heart'});
-})
-*/
-
 </script>
+
+
+
+
+
 <div class="index">
-<div id="zhezhao">
-</div>
-<?php if (!empty($this->options->indexsetup) && in_array('IndexImage', $this->options->indexsetup)): ?>
-<div id="screen">
-	<div id="mark">
- 		<div class="layer" data-depth="<?php $this->options->parallaxeffect();?>">
-<?php if (!empty($this->options->indexsetup) && in_array('Indexrandombackground', $this->options->indexsetup)): ?>
-               <img id="cover" src="<?php echo randombackground($this); ?>" />
-<?php else: ?>
-               <img id="cover" src="<?php $this->options->indeximage(); ?>" /> 
-<?php endif ?>
+    
+	<div id="zhezhao">
+	</div>
+	
+	<?php if (!empty($this->
+	options->indexsetup) && in_array('IndexImage', $this->options->indexsetup)): ?>
+	<div id="screen">
+		<div id="mark">
+			<div class="layer" data-depth="<?php $this->
+				options->parallaxeffect();?>">
+				<img id="cover" src="<?php $this->options->indeximage(); ?>" /> 
+			</div>
+		</div>
+	</div>
+	<?php else : ?>
+	
+	<div id="cover" style="background-image:url("http://mooow/pw/usr/uploads/wallhaven-478124.jpg")">
+	</div>
+	<?php endif ;?>
+	
+	<div id="style0">
+		<div class="vertical-center-child index-container">
+			<h1 class="index-title"><?php $this->
+			options->IndexName(); ?></h1>
+			<div class="content2">
+				<div class="p_part">
+					<p>
+						<?php $this->
+						options->IndexIntroduction(); ?>
+					</p>
+				</div>
+			</div>
+			<div class="index-contacts">
+				<?php if ($this->
+				options->homeButtonLinkA): ?>
+				<a class="social" target="_blank" href="<?php $this->options->homeButtonLinkA(); ?>">
+				<i class="fa fa-<?php $this->options->homeButtonFaA(); ?>"></i>
+				</a>
+				<?php endif; ?>
+				<?php if ($this->
+				options->homeButtonLinkB): ?>
+				<a class="social" target="_blank" href="<?php $this->options->homeButtonLinkB(); ?>">
+				<i class="fa fa-<?php $this->options->homeButtonFaB(); ?>"></i>
+				</a>
+				<?php endif; ?>
+				<?php if ($this->
+				options->homeButtonLinkC): ?>
+				<a class="social" href="<?php $this->options->homeButtonLinkC(); ?>">
+				<i class="fa fa-<?php $this->options->homeButtonFaC(); ?>"></i>
+				</a>
+				<?php endif; ?>
+				<?php if ($this->
+				options->homeButtonLinkD): ?>
+				<a class="social" target="_blank" href="<?php $this->options->homeButtonLinkD(); ?>">
+				<i class="fa fa-<?php $this->options->homeButtonFaD(); ?>"></i>
+				</a>
+				<?php endif; ?>
+				<a class="social" id="search-Button">
+				<i class="fa fa-search"></i>
+				</a>
+				<div class="site-search col-3 kit-hidden-tb">
+					<form id="search" method="post" action="./" role="search">
+						<label for="s" class="sr-only"><?php _e('搜索关键字'); ?>
+						</label>
+						<input id="search-text" type="text" name="s" class="text" placeholder="<?php _e('输入关键字搜索'); ?>" />
+						<button type="submit" id="search-submit" class="submit fa fa-search"></button>
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
-<?php else : ?>
-<div id="cover" style="background-image:url(<?php echo randombackground($this); ?>)"></div>
-<?php endif ;?>
 
-<?php if ( $this->options->Styleswitch =='0' ) : ?>
- <div id="style0">
-  <div class="vertical-center-child index-container">
-    <h1 class="index-title"><?php $this->options->IndexName(); ?></h1>
-    <div class="content2">
-<div class="p_part"><p><?php $this->options->IndexIntroduction(); ?></p>
-</div>
-</div>
-    <div class="index-contacts">
-		<?php if ($this->options->socialgithub): ?>
-			<a class="social github" target="blank" href="<?php $this->options->socialgithub(); ?>">
-				<i class="fa fa-github-alt"></i>
-			</a>
-		<?php endif; ?>
-		<?php if ($this->options->socialmail): ?>
-			<a class="social envelope" href="<?php $this->options->socialmail(); ?>">
-				<i class="fa fa-envelope"></i>
-			</a>
-		<?php endif; ?>
-			<a class="social rss" target="blank" href="<?php $this->options->siteUrl(); ?>feed/">
-				<i class="fa fa-rss"></i>
-			</a>
-		<?php if ($this->options->socialbook): ?>
-			<a class="social book" target="blank" href="<?php $this->options->socialbook(); ?>">
-				<i class="fa fa-book"></i>
-			</a>
-		<?php endif; ?>
-			<a class="social search" id="search-Button" target="blank" href="<?php $this->options->socialweibo(); ?>">
-				<i class="fa fa-search"></i>
-			</a>
-            <div class="site-search col-3 kit-hidden-tb">
-                <form id="search" method="post" action="./" role="search">
-                    <label for="s" class="sr-only"><?php _e('搜索关键字'); ?></label>
-                    <input id="search-text" type="text" name="s" class="text" placeholder="<?php _e('输入关键字搜索'); ?>" />
-                    <button type="submit" id="search-submit" class="submit fa fa-search"></button>
-                </form>
-            </div>
-    </div>
-</div>
-  </div>
-<?php elseif($this->options->Styleswitch == '1'): ?>
-<div id="style1">
-  <div class="vertical-center-child index-container">
-    <h1 class="index-title"><?php $this->options->IndexName(); ?></h1>
-<div class="content2">
-<div class="p_part"><p><?php $this->options->IndexIntroduction(); ?></p>
-</div>
-</div>
-    <div class="index-contacts">
-<div class="buttons">
-<?php if ($this->options->socialmail): ?>
-<a href="<?php $this->options->socialmail(); ?>">My Email</a>
-<?php endif; ?>
-<?php if ($this->options->socialgithub): ?>
-<a href="<?php $this->options->socialgithub(); ?>" target="_blank" >My Github</a>
-<?php endif; ?>
-</div>
-    </div>
-</div>
-  </div>
-<?php endif; ?>
 
 
 
 </div>
-</div>
+
+
+
 <!-- menu -->
 <?php $this->need('menu.php'); ?>
 

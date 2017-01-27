@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="theme-color" content="#303030">
+	<meta name="theme-color" content="<?php $this->options->ChromeColor(); ?>">
+	<link rel="shortcut icon" href="<?php $this->options->ICOlink(); ?>" type="image/x-icon">
 
  <?php } ?>
 
